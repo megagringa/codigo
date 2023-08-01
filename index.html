@@ -1,102 +1,71 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>02 formulario</title>
-  </head>
-  <body>
-    <section id="main-section">
-      <div id="formulario" class="section">
-        <form
-          action="/controlador-registro"
-          method="POST"
-          class="form-registro"
-          id="form-registro"
-          enctype="multipart/form-data"
-        >
-          <div class="form-group">
-            <label for="Nombre">Nombre y Apellido*</label>
-            <input
-              type="text"
-              class="input input-text"
-              name="nombre"
-              required
-              placeholder="Pepito Honguito"
-            />
-          </div>
-          <div class="form-group">
-            <label for="Mail">Email*</label>
-            <input
-              type="mail"
-              class="input"
-              name="mail"
-              required
-              placeholder="pepito@honguito.com"
-            />
-          </div>
-          <div class="form-group">
-            <label for="Telefono">Teléfono*</label>
-            <input
-              type="number"
-              class="input"
-              name="telefono"
-              placeholder="2615462587"
-            />
-          </div>
-          <div class="form-group">
-            <label for="radio-input">Teléfono*</label>
-            <input  type="radio" />
-            <label for="radio-input">celular*</label>
-            <input  type="radio" />
-            <label for="radio-input">taladro*</label>
-            <input  type="radio" />
-          </div>
-          <div class="form-group">
-            <label for="pais">País</label>
-            <select name="pais" id="pais" class="input">
-              <option value="arg">ARG</option>
-              <option value="chi">CHI</option>
-              <option value="brz">BRZ</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="imagen">Imagen de perfil</label>
-            <input type="file" class="input" name="imagen" />
-          </div>
-          <div class="form-group">
-            <label for="fecha">Alguna fecha</label>
-            <input
-              type="date"
-              name="fecha-inicio"
-              min="2015-01-01"
-              max="2020-06-20"
-            />
-          </div>
-          <div class="form-group">
-            <label for="contrasena" class="contrasena">Contraseña*</label>
-            <input
-              type="password"
-              class="input"
-              name="contrasena"
-              pattern=".{8,}"
-              placeholder="Ingrese al menos 8 dígitos"
-            />
-          </div>
-          <div class="form-group">
-            <label for="contrasena" class="contrasena">Repetir contraseña*</label>
-            <input
-              type="password"
-              class="input"
-              name="contrasena"
-              pattern=".{8,}"
-              placeholder="Ingrese al menos 8 dígitos"
-            />
-          </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Página de Utilidad</title>
+</head>
 
-          <button type="submit" class="link btn">Registrarme</button>
-        </form>
-      </div>
-    </section>
-  </body>
+<body>
+    <header>
+        <nav>
+            <div class="menu-item"><a href="#inicio">Inicio</a></div>
+            <div class="menu-item"><a href="#github">GitHub</a></div>
+            <div class="menu-item"><a href="#linkedin">LinkedIn</a></div>
+            <div class="menu-item"><a href="#integrantes">Integrantes</a></div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Imagen Móvil de Utilidad</h2>
+            <a href="https://www.example.com/">
+                <div class="image-container">
+                    <!-- Aquí va la imagen movible de la utilidad -->
+                </div>
+            </a>
+        </section>
+
+        <section id="github">
+            <h2>Armado en HTML</h2>
+            <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Mi Página&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Bienvenido a mi página&lt;/h1&gt;
+                    &lt;p&gt;Este es un ejemplo de armado en HTML.&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre>
+        </section>
+
+        <section id="linkedin">
+            <h2>Estilos CSS</h2>
+            <pre><code>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f0f0f0;
+                }
+
+                h1 {
+                    color: #008080;
+                }
+
+                p {
+                    color: #333;
+                }
+            </code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>Muchas gracias por ingresar.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
